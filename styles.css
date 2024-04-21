@@ -29,7 +29,7 @@ body {
     width: 100px; /* Tamaño del logo */
     position: absolute;
     z-index: 10;
-    bottom: 0;
+    top: 0;
 }
 
 .banner .title {
@@ -38,7 +38,7 @@ body {
     position: absolute; /* Permite que el título se superponga al banner */
     top: 50%; /* Coloca el título en el centro vertical del banner */
     transform: translateY(-55%); /* Ajusta la posición para centrarlo exactamente */
-    width: 90%;
+    width: 100%;
     z-index: 10; /* Para asegurar que esté al frente */
     text-align: center; /* Alinea el texto al centro */
 }
@@ -46,9 +46,9 @@ body {
 .banner .banner-img {
     width: 100%; /* Imagen que ocupa todo el ancho */
     max-height: 1920px; /* Limita la altura de la imagen */
-    object-fit: fill; /* Asegura que la imagen cubra todo el espacio */
-    border-bottom-left-radius: 50px; /* Radio para la esquina inferior izquierda */
-    border-bottom-right-radius: 50px; /* Radio para la esquina inferior derecha */
+    object-fit:cover; /* Asegura que la imagen cubra todo el espacio */
+    border-bottom-left-radius: 40%; /* Radio para la esquina inferior izquierda */
+    border-bottom-right-radius: 40%; /* Radio para la esquina inferior derecha */
     height: 100vh; /* Hace que el banner ocupe toda la altura del viewport */
 }
 
@@ -64,6 +64,7 @@ body {
 
 .floating-button {
     position: fixed; /* Hace que el botón sea flotante */
+    z-index: 99;
     bottom: 0px; /* Posiciona el botón a 0px del borde inferior */
     right: 0px; /* Posiciona el botón a 0px del borde derecho */
     cursor: pointer;
@@ -102,7 +103,7 @@ body {
     transition: all 0.3s; /* Animación suave */
 }
 
-.navbar a:hover:after {
+.navbar ul a:hover:after {
     content: ''; /* Pseudo-elemento vacío para crear la línea de subrayado */
     position: absolute; /* Posición absoluta para el subrayado */
     bottom: 0; /* Alinea el subrayado con la parte inferior del elemento 'a' */
@@ -113,17 +114,36 @@ body {
     transition: width 0.5s; /* Animación para el efecto de subrayado */
 }
 
-.logo {
+a.logo {
     flex: 0 1 auto; /* Permite que el logo tenga un ancho variable */
     text-align: center; /* Alinea el logo al centro */
-    padding: 10px 0; /* Añade algo de padding para alineación */
+    padding: 0px; /* Añade algo de padding para alineación */
 }
 
 .logo img {
-    height: 80px; /* Tamaño del logo */
+    height: 70px; /* Tamaño del logo */
 }
 
 /* No aplicar efecto hover al logo */
 .logo:hover {
     background-color: none;
+}
+
+#about {
+    text-align: center; /* Centrar el contenido de la sección */
+}
+
+#about h1 {
+    font-family: 'Libre Caslon Display', serif; /* Fuente para el título */
+    color: var(--color-text); /* Color verde para el texto */
+    margin: 0 20px 50px;
+    font-size: 5em;
+}
+
+#about p {
+    font-family: 'Roboto', sans-serif; /* Fuente para el párrafo */
+    color: var(--color-text); /* Color verde para el texto */
+    margin: 0 auto 50px; /* Centrar el texto del párrafo */
+    max-width: 600px; /* Limitar el ancho del párrafo para mejor lectura */
+    line-height: 1.6; /* Espaciado entre líneas para mayor legibilidad */
 }
