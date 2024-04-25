@@ -14,33 +14,22 @@ body {
 /* Estilos para el Banner */
 .banner {
     position: relative; /* Permite que el título se superponga */
-    text-align: center;
     background-color: var(--color-bg); /* Usa la variable para el color de fondo */
 }
 
-.banner .container {
+.banner .container-banner {
     position: relative; /* Necesario para que el título se posicione correctamente */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.banner .logo {
-    width: 100px; /* Tamaño del logo */
-    position: absolute;
-    z-index: 10;
-    top: 0;
-}
-
 .banner .title {
-    font-size: 10rem; /* Tamaño del título */
-    color: var(--color-bg); /* Usa la variable para el color del título */
     position: absolute; /* Permite que el título se superponga al banner */
     top: 50%; /* Coloca el título en el centro vertical del banner */
     transform: translateY(-55%); /* Ajusta la posición para centrarlo exactamente */
     width: 100%;
     z-index: 10; /* Para asegurar que esté al frente */
-    text-align: center; /* Alinea el texto al centro */
 }
 
 .banner .banner-img {
