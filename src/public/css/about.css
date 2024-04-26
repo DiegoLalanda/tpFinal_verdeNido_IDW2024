@@ -1,0 +1,30 @@
+:root {
+    --color-bg: #F2EDE4; /* Color de fondo general */
+    --color-text: #736C4D; /* Color del texto en la barra de navegación */
+}
+
+body {
+    font-family: 'Libre Caslon Display', serif; /* Fuente predeterminada */
+    background-color: var(--color-bg); /* Usa la variable para el color de fondo */
+    margin: 0;
+    padding: 0;
+}
+
+#about {
+    text-align: center; /* Centrar el contenido de la sección */
+}
+
+#about h1 {
+    font-family: 'Libre Caslon Display', serif; /* Fuente para el título */
+    color: var(--color-text); /* Color verde para el texto */
+    margin: 0 20px 50px;
+    font-size: 5em;
+}
+
+#about p {
+    font-family: 'Roboto', sans-serif; /* Fuente para el párrafo */
+    color: var(--color-text); /* Color verde para el texto */
+    margin: 0 auto 50px; /* Centrar el texto del párrafo */
+    max-width: 600px; /* Limitar el ancho del párrafo para mejor lectura */
+    line-height: 1.6; /* Espaciado entre líneas para mayor legibilidad */
+}

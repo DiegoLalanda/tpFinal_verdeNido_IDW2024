@@ -13,6 +13,11 @@ app.get('/',(req,res)=>{
   res.sendFile(join(__dirname,'src/public/index.html'));
 });
 
+// Nueva ruta para la sección "Acerca de"
+app.get('/about', (req, res) => {
+  res.sendFile(join(__dirname, 'src/public/about.html'));
+});
+
 app.get('/edit', (req,res) => {
   res.sendFile(join(__dirname,'src/public/edit.html'));
 });

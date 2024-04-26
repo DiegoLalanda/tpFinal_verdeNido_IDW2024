@@ -1,7 +1,6 @@
 :root {
     --color-bg: #F2EDE4; /* Color de fondo general */
     --color-text: #736C4D; /* Color del texto en la barra de navegación */
-    --color-hover: #E1DFC9; /* Color para el efecto hover */
 }
 
 body {
@@ -70,7 +69,6 @@ body {
     background-color: var(--color-bg); /* Usa la variable para el color de fondo */
     padding: 10px; /* Espaciado interno */
     display: flex; /* Para alinear los elementos */
-    justify-content: space-around; /* Espacia los elementos a ambos extremos */
     align-items: center; /* Alineación vertical */
 }
 
@@ -79,17 +77,20 @@ body {
     margin: 0; /* Sin margen */
     padding: 0; /* Sin padding */
     display: flex; /* Para alinear horizontalmente */
+    flex: 1;
+    justify-content: space-around;
 }
 
 .navbar a {
     font-family: 'Roboto', sans-serif; /* Fuente para los enlaces del navbar */
     text-decoration: none; /* Sin subrayado */
     color: var(--color-text); /* Usa la variable para el color del texto */
-    font-weight:lighter; /* Texto en negrita */
+    font-weight:lighter;
     font-size:0.8em; /* Tamaño del texto */
     padding: 10px 50px; /* Espaciado interno */
     position: relative; /* Para el uso de pseudo-elementos */
     transition: all 0.3s; /* Animación suave */
+    display: block;
 }
 
 .navbar ul a:hover:after {
@@ -111,28 +112,4 @@ a.logo {
 
 .logo img {
     height: 70px; /* Tamaño del logo */
-}
-
-/* No aplicar efecto hover al logo */
-.logo:hover {
-    background-color: none;
-}
-
-#about {
-    text-align: center; /* Centrar el contenido de la sección */
-}
-
-#about h1 {
-    font-family: 'Libre Caslon Display', serif; /* Fuente para el título */
-    color: var(--color-text); /* Color verde para el texto */
-    margin: 0 20px 50px;
-    font-size: 5em;
-}
-
-#about p {
-    font-family: 'Roboto', sans-serif; /* Fuente para el párrafo */
-    color: var(--color-text); /* Color verde para el texto */
-    margin: 0 auto 50px; /* Centrar el texto del párrafo */
-    max-width: 600px; /* Limitar el ancho del párrafo para mejor lectura */
-    line-height: 1.6; /* Espaciado entre líneas para mayor legibilidad */
 }
