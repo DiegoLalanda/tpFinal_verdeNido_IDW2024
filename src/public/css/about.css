@@ -3,28 +3,110 @@
     --color-text: #736C4D; /* Color del texto en la barra de navegación */
 }
 
+
 body {
-    font-family: 'Libre Caslon Display', serif; /* Fuente predeterminada */
-    background-color: var(--color-bg); /* Usa la variable para el color de fondo */
-    margin: 0;
-    padding: 0;
-}
-
-#about {
-    text-align: center; /* Centrar el contenido de la sección */
-}
-
-#about h1 {
-    font-family: 'Libre Caslon Display', serif; /* Fuente para el título */
-    color: var(--color-text); /* Color verde para el texto */
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
+    background-color: var(--color-text); /* Usa la variable para el color de fondo */
     margin: 0 20px 50px;
-    font-size: 5em;
 }
 
-#about p {
-    font-family: 'Roboto', sans-serif; /* Fuente para el párrafo */
-    color: var(--color-text); /* Color verde para el texto */
-    margin: 0 auto 50px; /* Centrar el texto del párrafo */
-    max-width: 600px; /* Limitar el ancho del párrafo para mejor lectura */
-    line-height: 1.6; /* Espaciado entre líneas para mayor legibilidad */
+.space {
+    height: 100px; /* Espacio entre secciones */
 }
+
+.title {
+    color: var(--color-bg); /* Color del texto */
+    font-size: 3.5em;
+    letter-spacing: -3px;
+}
+
+.title h1 {
+    margin: 0px;
+    font-weight: 500;
+}
+
+.title .nido {
+    display: flex; /* Permite que la línea y el texto estén en la misma fila */
+    align-items: center; /* Alinea verticalmente */
+    margin-top: -50px;
+    margin-bottom: -10px;
+}
+
+.line-nido {
+    display: flex; /* Alinea horizontalmente */
+    align-items: center; /* Para centrar verticalmente */
+}
+
+.line-decorative {
+    height: 1px; /* Grosor de la línea */
+    background-color: var(--color-bg); /* Color de fondo */
+    width: 150px; /* Longitud de la línea decorativa */
+    border-radius: 5px; /* Borde redondeado */
+    margin-right: 10px; /* Espacio entre la línea y el texto */
+}
+
+.text1{
+    display:flex;
+    justify-content: flex-end;
+    color: var(--color-bg);
+}
+
+.text1 .column{
+    width: 50%;
+}
+
+.text1 h2{
+    font-weight: 400;
+    font-size: 2em;
+    margin: 0;
+}
+
+.text2 {
+    display: flex; /* Usa flexbox para alinear columnas */
+    height: 1100px; /* Altura fija para el contenedor */
+    gap: 20px; /* Espacio entre columnas */
+    color: var(--color-bg);
+}
+
+.column-iz {
+    flex: 1; /* Ocupa la mitad izquierda */
+}
+
+.about-img1 {
+    width: 85%; /* Imagen ocupa todo el ancho */
+    height: 50%; /* Imagen ocupa toda la altura */
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
+}
+
+.column-der {
+    flex: 0.5; /* Ocupa la mitad derecha */
+    display: flex; /* Para dividir el espacio en el interior */
+    flex-direction: column; /* Alinea los elementos verticalmente */
+}
+
+.text-container {
+    flex: 1; /* El texto ocupa la parte superior */
+    display: flex; /* Permite alinear el texto */
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+}
+
+.text-container h2{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.image-container {
+    flex: 1; /* La imagen ocupa la parte inferior */
+}
+
+.about-img2 {
+    width: 100%; /* Imagen ocupa todo el ancho */
+    height: 50%; /* Imagen ocupa toda la altura */
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
+}
+
+
+
