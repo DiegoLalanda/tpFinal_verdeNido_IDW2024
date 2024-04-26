@@ -9,7 +9,7 @@ body {
     font-weight: 300;
     font-style: normal;
     background-color: var(--color-text); /* Usa la variable para el color de fondo */
-    margin: 0 20px 50px;
+    margin: 0px
 }
 
 .space {
@@ -20,6 +20,7 @@ body {
     color: var(--color-bg); /* Color del texto */
     font-size: 3.5em;
     letter-spacing: -3px;
+    margin: 0px 50px 0px 50px;
 }
 
 .title h1 {
@@ -47,30 +48,31 @@ body {
     margin-right: 10px; /* Espacio entre la línea y el texto */
 }
 
-.text1{
+.section1{
     display:flex;
     justify-content: flex-end;
     color: var(--color-bg);
+    margin: 0px 50px 0px 50px;
 }
 
-.text1 .column{
+.section1 .column{
     width: 50%;
 }
 
-.text1 h2{
+.section1 h2{
     font-weight: 400;
     font-size: 2em;
     margin: 0;
 }
 
-.text2 {
+.section2 {
     display: flex; /* Usa flexbox para alinear columnas */
-    height: 1100px; /* Altura fija para el contenedor */
     gap: 20px; /* Espacio entre columnas */
     color: var(--color-bg);
+    margin: 0px 50px 0px 50px;
 }
 
-.column-iz {
+.section2 .column-iz {
     flex: 1; /* Ocupa la mitad izquierda */
 }
 
@@ -80,7 +82,7 @@ body {
     object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
 }
 
-.column-der {
+.section2 .column-der {
     flex: 0.5; /* Ocupa la mitad derecha */
     display: flex; /* Para dividir el espacio en el interior */
     flex-direction: column; /* Alinea los elementos verticalmente */
@@ -94,8 +96,8 @@ body {
 }
 
 .text-container h2{
-    font-weight: 900;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 25px;
 }
 
 .image-container {
@@ -108,5 +110,34 @@ body {
     object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
 }
 
+.section3 {
+    display: flex; /* Usa flexbox para alinear columnas */
+    justify-content: center;
+    gap: 20px; /* Espacio entre columnas */
+    background-color: var(--color-bg);
+    width: 100%;
+    margin-top: -100px;
+}
 
+.section3 .imgs{
+    display: flex; /* Usa flexbox para alinear columnas */
+    justify-content: center;
+    width: 50%;
+    gap: 40px; /* Espacio entre columnas */
+    margin: 200px;
+    align-items:flex-end;
+    padding: 20px;
+}
 
+.about-img3 {
+    width: 70%; /* Imagen ocupa todo el ancho */
+    height: 60vh; /* Imagen ocupa toda la altura */
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
+}
+
+.about-img4 {
+    width: 40%; /* Imagen ocupa todo el ancho */
+    height: 40vh; /* Imagen ocupa toda la altura */
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
+    margin-bottom: -20%;
+}
