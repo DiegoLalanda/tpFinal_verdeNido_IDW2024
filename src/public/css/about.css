@@ -12,8 +12,29 @@ body {
     margin: 0px
 }
 
+/* TÍTULO */
+
 .space {
-    height: 100px; /* Espacio entre secciones */
+    height: 50px; /* Espacio entre secciones */
+}
+
+.section-name{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+    gap: 5px;
+    margin-bottom: -50px;
+    color: var(--color-bg);
+}
+.section-name h3,i{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.section-name i{
+    font-size: 10px;
 }
 
 .title {
@@ -48,6 +69,8 @@ body {
     margin-right: 10px; /* Espacio entre la línea y el texto */
 }
 
+/* SECCIÓN 1 */
+
 .section1{
     display:flex;
     justify-content: flex-end;
@@ -64,6 +87,8 @@ body {
     font-size: 2em;
     margin: 0;
 }
+
+/* SECCIÓN 2 */
 
 .section2 {
     display: flex; /* Usa flexbox para alinear columnas */
@@ -110,6 +135,8 @@ body {
     object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
 }
 
+/* SECCIÓN 3 */
+
 .section3 {
     display: flex; /* Usa flexbox para alinear columnas */
     justify-content: center;
@@ -117,27 +144,4 @@ body {
     background-color: var(--color-bg);
     width: 100%;
     margin-top: -100px;
-}
-
-.section3 .imgs{
-    display: flex; /* Usa flexbox para alinear columnas */
-    justify-content: center;
-    width: 50%;
-    gap: 40px; /* Espacio entre columnas */
-    margin: 200px;
-    align-items:flex-end;
-    padding: 20px;
-}
-
-.about-img3 {
-    width: 70%; /* Imagen ocupa todo el ancho */
-    height: 60vh; /* Imagen ocupa toda la altura */
-    object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
-}
-
-.about-img4 {
-    width: 40%; /* Imagen ocupa todo el ancho */
-    height: 40vh; /* Imagen ocupa toda la altura */
-    object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
-    margin-bottom: -20%;
 }
