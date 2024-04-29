@@ -101,7 +101,7 @@ body {
     flex: 1; /* Ocupa la mitad izquierda */
 }
 
-.about-img1 {
+.section2 .about-img1 {
     width: 85%; /* Imagen ocupa todo el ancho */
     height: 50%; /* Imagen ocupa toda la altura */
     object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
@@ -113,23 +113,23 @@ body {
     flex-direction: column; /* Alinea los elementos verticalmente */
 }
 
-.text-container {
+.section2 .text-container {
     flex: 1; /* El texto ocupa la parte superior */
     display: flex; /* Permite alinear el texto */
     justify-content: center; /* Centra el texto horizontalmente */
     align-items: center; /* Centra el texto verticalmente */
 }
 
-.text-container h2{
+.section2 .text-container h2{
     font-weight: 500;
     font-size: 25px;
 }
 
-.image-container {
+.section2 .image-container {
     flex: 1; /* La imagen ocupa la parte inferior */
 }
 
-.about-img2 {
+.section2 .about-img2 {
     width: 100%; /* Imagen ocupa todo el ancho */
     height: 50%; /* Imagen ocupa toda la altura */
     object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
@@ -138,10 +138,101 @@ body {
 /* SECCIÓN 3 */
 
 .section3 {
-    display: flex; /* Usa flexbox para alinear columnas */
-    justify-content: center;
-    gap: 20px; /* Espacio entre columnas */
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-bg);
     width: 100%;
     margin-top: -100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
+
+.section3 .text-container{
+    padding: 0px 50px 0px 50px;
+    display: flex; /* Usa flexbox para alinear columnas */
+    justify-content: space-between;
+    gap: 20px; /* Espacio entre columnas */
+    align-items: flex-start;
+}
+
+.section3 .text{
+    width: 60%;
+    justify-content: flex-end;
+    color: var(--color-text);
+}
+
+.section3 h2{
+    font-size: 50px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.section-name2{
+    display: flex;
+    align-items:center;
+    justify-content:flex-start;
+    height: 50px;
+    gap: 5px;
+    color: var(--color-text);
+}
+.section-name2 h3,i{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.section-name2 i{
+    font-size: 10px;
+}
+
+.section3 .img-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.section3 .column-iz{
+    flex: 1;
+    padding-left: 50px;
+}
+
+.section3 .column-der {
+    flex: 1; /* Ocupa la mitad derecha */
+    display: flex; /* Para dividir el espacio en el interior */
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+.section3 .about-img3{
+    width: 100%;
+    height: 95vh;
+    object-fit: cover;
+}
+
+.section3 .about-img4{
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+}
+
+.section3 .column-der .text-container{
+    padding-top: 50px;
+}
+
+.section3 .column-der .text-container h2{
+    width: 50%;
+    font-size: 23px;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.section3 .column-der .image-container{
+    padding-bottom: 50px;
+    width: 50%;
+    
+}
+
+
