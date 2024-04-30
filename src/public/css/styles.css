@@ -4,8 +4,9 @@
 }
 
 body {
-    font-family: 'Libre Caslon Display', serif; /* Fuente predeterminada */
-    background-color: var(--color-bg); /* Usa la variable para el color de fondo */
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
     margin: 0;
     padding: 0;
 }
@@ -113,3 +114,4 @@ a.logo {
 .logo img {
     height: 70px; /* Tamaño del logo */
 }
+
