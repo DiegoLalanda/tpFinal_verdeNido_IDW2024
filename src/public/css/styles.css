@@ -14,6 +14,7 @@ body {
     padding: 0;
 }
 
+/* Estilos para el Header */
 .header {
     header {
         background-color: #333; 
@@ -149,6 +150,47 @@ a.logo {
     height: 70px; /* Tamaño del logo */
 }
 
+/* Estilos para la página de Barra de Búsqueda */
+.container-search {
+    width: 70%; /* Ancho del contenedor */
+}
+.search-box {
+    width: 100%;
+    height: 80px; /* Altura del rectángulo */
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.search-input {
+    width: 25%; /* Ancho de cada campo */
+    height: 40px; /* Altura de cada campo */
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-btn {
+    width: 100px; /* Ancho del botón */
+    height: 40px; /* Altura del botón */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
+}
+
+/* Estilos para la página de Contacto */
 .contact {
     .banner .banner-pic {
         width: 100%;
