@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva Naturaleza</title>
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Importa la fuente Libre Caslon Display -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&display=swap');
+    </style>
+</head>
+<body class="contact">    
+
+    <div class="banner">
+        <img src="img/encabezado-contact-page.png" alt="Imagen del banner" class="banner-pic">
+    </div>
+    
+     <!-- Header con la barra de navegación -->
+    <header class="header">
+        <nav>
+            <a href="">NOSOTROS</a>
+            <a href="">CONTACTO</a>
+            <a href="index.html" class="logo"><img src="img/LOGO FOTO.png" alt="Logo Verde Nido"></a>
+            <a href="">ALOJAMIENTOS</a>
+            <a href="">INICIAR SESION</a>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <div class="container">
+        <h2>Contactanos</h2>
+        <p class="encabezado">Estamos para ayudarte con cualquier pregunta que tengas. <br>
+            Si tenés alguna duda, no dudes en escribirnos y te responderemos lo antes posible.</p>
+
+        <h3>Información de contacto</h3>
+        <p>Todos los campos con * son requeridos.</p>    
+        
+        <!-- Formulario de contacto -->
+        <form action="submit.php" method="post">
+            <div class="row">
+                <div class="half-column">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="half-column">
+                    <label for="telefono">Teléfono *</label>
+                    <input type="text" id="telefono" name="telefono">
+                </div>
+            </div>
+            <div style="width: 48%;">   
+                <label for="nombre">Nombre Completo *</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <h3 class="apartado">Elegí un tema</h3>
+
+            <!-- Sección inferior -->
+            <div style="display: flex; justify-content: space-between;">
+                <div style="width: 48%;">
+                    <label for="motivo">Motivo de contacto</label>
+                    <select id="motivo" name="motivo">
+                        <option value="" disabled selected>Seleccione una opción</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="sugerencia">Sugerencia</option>
+                    </select>
+                </div>
+                <div style="width: 48%;">
+                    <label for="provincia">Provincia</label>
+                    <select id="provincia" name="provincia">
+                        <option value="" disabled selected>Seleccione una opción</option>
+                        <option value="buenos-aires">Buenos Aires</option>
+                        <option value="entre-rios">Entre Ríos</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Asunto y detalles -->
+            <div style="width: 48%; margin-top: 20px;">
+                <label for="asunto">Asunto *</label>
+                <input type="text" id="asunto" name="asunto" style="width: 100%;">
+
+                <label for="detalles">Ingrese los detalles de su consulta *</label>
+                <textarea class="detalles" id="detalles" name="detalles" rows="4" required></textarea>
+            </div>
+            
+            <div class="button" >
+                <input type="submit" value="Enviar">
+            </div>
+            
+        </form>
+    </div>
+
+    <footer>
+        <!-- Pie de página -->
+    </footer>
+</body>

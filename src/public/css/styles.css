@@ -1,6 +1,9 @@
 :root {
-    --color-bg: #F2EDE4; /* Color de fondo general */
-    --color-text: #736C4D; /* Color del texto en la barra de navegación */
+    --color-claro: #F2EDE4; 
+    --color-light-green: #C3F2B6;
+    --color-green: #ACBF8F;   
+    --color-dark-green: #736C4D;
+    --color-red:#954926;
 }
 
 body {
@@ -11,10 +14,41 @@ body {
     padding: 0;
 }
 
+.header {
+    header {
+        background-color: #333; 
+        color: #fff; 
+        text-align: center;
+    }
+    img {
+        width: 100%;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: #f2ede4;
+    }
+    nav a {
+        text-decoration: none; 
+        padding: 0 15px;     
+        color: var(--color-dark-green);
+        font-weight: bold;
+        padding-top: 30px;
+    }
+    nav a:hover {
+        color: var(--color-red);
+    }
+    nav .logo {
+        max-width: 120px;
+        padding-top: 0;
+    }
+}
+
+
 /* Estilos para el Banner */
 .banner {
     position: relative; /* Permite que el título se superponga */
-    background-color: var(--color-bg); /* Usa la variable para el color de fondo */
+    background-color: var(--color-claro); /* Usa la variable para el color de fondo */
 }
 
 .banner .container-banner {
@@ -67,7 +101,7 @@ body {
 /* Barra de navegación */
 
 .navbar {
-    background-color: var(--color-bg); /* Usa la variable para el color de fondo */
+    background-color: var(--color-claro); /* Usa la variable para el color de fondo */
     padding: 10px; /* Espaciado interno */
     display: flex; /* Para alinear los elementos */
     align-items: center; /* Alineación vertical */
@@ -85,7 +119,7 @@ body {
 .navbar a {
     font-family: 'Roboto', sans-serif; /* Fuente para los enlaces del navbar */
     text-decoration: none; /* Sin subrayado */
-    color: var(--color-text); /* Usa la variable para el color del texto */
+    color: var(--color-dark-green); /* Usa la variable para el color del texto */
     font-weight:lighter;
     font-size:0.8em; /* Tamaño del texto */
     padding: 10px 50px; /* Espaciado interno */
@@ -101,7 +135,7 @@ body {
     left: 0; /* Comienza desde la izquierda */
     width: 100%; /* El subrayado cubre todo el ancho del elemento 'a' */
     height: 2px; /* Altura del subrayado */
-    background-color: var(--color-text); /* Color del subrayado */
+    background-color: var(--color-dark-green); /* Color del subrayado */
     transition: width 0.5s; /* Animación para el efecto de subrayado */
 }
 
@@ -113,5 +147,96 @@ a.logo {
 
 .logo img {
     height: 70px; /* Tamaño del logo */
+}
+
+.contact {
+    .banner .banner-pic {
+        width: 100%;
+    }
+    .container {
+        max-width: 60%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .container .encabezado {
+        text-align: center;
+    }
+    .container p {
+        margin: 0 0 20px 0;
+        font-weight: bold;
+    }
+    h1, h2 {
+        text-align: center;
+        margin: 20px 0 10px 0;
+        color: var(--color-red);
+    }
+    h3 {
+        margin: 50px 0 6px 0;
+        color: var(--color-red);
+    }
+    .apartado {
+        margin: 40px 0 40px 0;
+    }
+    form {
+        margin-top: 40px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        margin-top: 20px;
+        color: var(--color-red);
+        font-weight: bold;
+    }
+    input, select {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 16px;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+    .detalles {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 16px;
+        margin-top: 20px;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+    input[type="submit"] {
+        background-color: var(--color-red);
+        color: #f2ede4;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: var(--color-dark-green);
+    }
+    
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .half-column {
+        width: 48%; 
+    }
+    
+    .half-column:not(:first-child) {
+        margin-left: 4%; 
+    }
+    
+    .button {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin-top: 76px;
+    }
+    .button input {
+        width: 14%; 
+        height: 50px;
+        text-align: center;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+    }  
 }
 
