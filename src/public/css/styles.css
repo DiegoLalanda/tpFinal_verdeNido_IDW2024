@@ -102,8 +102,7 @@ body {
 /* Barra de navegación */
 
 .navbar {
-    background-color: var(--color-claro); /* Usa la variable para el color de fondo */
-    padding: 10px; /* Espaciado interno */
+    background-color: var(--color-claro); /* Usa la variable para el color de fondo */ 
     display: flex; /* Para alinear los elementos */
     align-items: center; /* Alineación vertical */
 }
@@ -152,6 +151,7 @@ a.logo {
 
 /* Estilos para la página de Contacto */
 .contact {
+    background-color: var(--color-claro);
     .banner .banner-pic {
         width: 100%;
     }
@@ -165,7 +165,7 @@ a.logo {
     }
     .container p {
         margin: 0 0 20px 0;
-        font-weight: bold;
+        font-weight:bold;
     }
     h1, h2 {
         text-align: center;
