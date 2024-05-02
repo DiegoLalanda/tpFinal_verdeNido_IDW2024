@@ -1,6 +1,6 @@
 :root {
     --color-claro: #F2EDE4; 
-    --color-light-green: #C3F2B6;
+    --color-light-green: #daeccdaa;
     --color-green: #ACBF8F;   
     --color-dark-green: #736C4D;
     --color-red:#954926;
@@ -241,4 +241,49 @@ a.logo {
         border-radius: 10px;
     }  
 }
+
+footer {
+    background-color: var(--color-light-green);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-left img {
+    width: 330px;   
+    margin-left: 50px;
+}
+.footer-right img {
+    width: 350px;
+    margin-right: 75px;
+}
+.footer-center {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-text-left,
+.footer-text-right {
+    flex-basis: 50%;
+    margin: 80px;
+}
+.footer-text-left a,
+.footer-text-right a {    
+    display: block;
+    text-decoration: none; 
+    margin: 5px 0;
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--color-dark-green);
+}
+.footer-text-left p,
+.footer-text-right p {
+    margin: 5px 0;
+    color: var(--color-dark-green);
+    font-weight: bold;
+    font-size: 25px;
+}
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
 
