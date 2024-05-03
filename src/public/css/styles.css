@@ -14,37 +14,6 @@ body {
     padding: 0;
 }
 
-/* Estilos para el Header */
-.header {
-    header {
-        background-color: #333; 
-        color: #fff; 
-        text-align: center;
-    }
-    img {
-        width: 100%;
-    }
-    nav {
-        display: flex;
-        justify-content: space-around;
-        background-color: #f2ede4;
-    }
-    nav a {
-        text-decoration: none; 
-        padding: 0 15px;     
-        color: var(--color-dark-green);
-        font-weight: bold;
-        padding-top: 30px;
-    }
-    nav a:hover {
-        color: var(--color-red);
-    }
-    nav .logo {
-        max-width: 120px;
-        padding-top: 0;
-    }
-}
-
 
 /* Estilos para el Banner */
 .banner {
@@ -184,8 +153,7 @@ a.logo {
     }
     label {
         display: block;
-        margin-bottom: 5px;
-        margin-top: 20px;
+        margin: 20px 0 5px;
         color: var(--color-red);
         font-weight: bold;
     }
@@ -195,14 +163,15 @@ a.logo {
         margin-bottom: 16px;
         border: none;
         border-bottom: 1px solid black;
+        background-color: var(--color-claro);
     }
     .detalles {
         width: 100%;
         padding: 12px;
-        margin-bottom: 16px;
-        margin-top: 20px;
+        margin: 20px 0 16px;
         border: none;
         border-bottom: 1px solid black;
+        background-color: var(--color-claro);
     }
     input[type="submit"] {
         background-color: var(--color-red);
@@ -211,21 +180,17 @@ a.logo {
     }
     input[type="submit"]:hover {
         background-color: var(--color-dark-green);
-    }
-    
+    }    
     .row {
         display: flex;
         justify-content: space-between;
-    }
-    
+    }    
     .half-column {
         width: 48%; 
-    }
-    
+    }    
     .half-column:not(:first-child) {
         margin-left: 4%; 
-    }
-    
+    }    
     .button {
         display:flex;
         justify-content:center;
@@ -239,6 +204,7 @@ a.logo {
         font-weight: bold;
         border: none;
         border-radius: 10px;
+        margin-bottom: 80px;
     }  
 }
 
@@ -274,6 +240,24 @@ footer {
     font-size: 25px;
     color: var(--color-dark-green);
 }
+
+.footer-text-left a:hover,
+.footer-text-right a:hover {
+    position: relative; /* Ensure pseudo-element is positioned relative to the anchor */
+}
+
+.footer-text-left a:hover::after,
+.footer-text-right a:hover::after {
+    content: ''; 
+    position: absolute; 
+    bottom: -4px; 
+    left: 0;
+    width: 100%; 
+    height: 2px; 
+    background-color: var(--color-dark-green); 
+    transition: width 0.5s; 
+}
+
 .footer-text-left p,
 .footer-text-right p {
     margin: 5px 0;
