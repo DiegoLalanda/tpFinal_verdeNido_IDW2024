@@ -173,6 +173,23 @@ footer {
     font-family:"Frank Ruhl Libre", serif
 }
 
+.footer-text-left a:hover,
+.footer-text-right a:hover {
+    position: relative; /* Ensure pseudo-element is positioned relative to the anchor */
+}
+
+.footer-text-left a:hover::after,
+.footer-text-right a:hover::after {
+    content: ''; 
+    position: absolute; 
+    bottom: -4px; 
+    left: 0;
+    width: 100%; 
+    height: 2px; 
+    background-color: var(--color-dark-green); 
+    transition: width 0.5s; 
+}
+
 /* Estilos para la sección Alojamientos */
 .alojamientos{
     display: flex;
@@ -180,3 +197,25 @@ footer {
     font-size: 2em;
     color: var(--color-dark-green);
 }
+
+/* Personalización de la barra de desplazamiento para navegadores basados en WebKit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-dark-green); /* Color del thumb (parte desplazable) */
+    border-radius: 10px; /* Bordes redondeados para un aspecto suave */
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-claro); /* Color del track (parte de fondo) */
+}
+
+/* Personalización para Firefox */
+* {
+    scrollbar-width: thin; /* Ancho fino para la barra de desplazamiento */
+    scrollbar-color: #736C4D #F2EDE4; /* Color del thumb y del track */
+}
+
+
