@@ -1,8 +1,8 @@
 :root {
-    --color-claro: #F2EDE4; 
+    --color-claro: #f2ede4; 
     --color-light-green: #daeccdaa;
-    --color-green: #ACBF8F;   
-    --color-dark-green: #736C4D;
+    --color-green: #abbe8e;   
+    --color-dark-green: #736c4d;
     --color-red:#954926;
 }
 
@@ -12,6 +12,7 @@ body {
     font-style: normal;
     margin: 0;
     padding: 0;
+    background-color: var(--color-claro);
 }
 
 
@@ -39,9 +40,9 @@ body {
 .banner .banner-img {
     width: 100%; /* Imagen que ocupa todo el ancho */
     max-height: 1920px; /* Limita la altura de la imagen */
-    object-fit:cover; /* Asegura que la imagen cubra todo el espacio */
-    border-bottom-left-radius: 40%; /* Radio para la esquina inferior izquierda */
-    border-bottom-right-radius: 40%; /* Radio para la esquina inferior derecha */
+    object-fit:cover; 
+    border-bottom-left-radius: 40%; 
+    border-bottom-right-radius: 40%;
     height: 100vh; /* Hace que el banner ocupe toda la altura del viewport */
 }
 
@@ -79,7 +80,7 @@ body {
 .navbar ul {
     list-style: none; /* Quita los puntos de la lista */
     margin: 0; /* Sin margen */
-    padding: 0; /* Sin padding */
+    padding: 30px 0 30px 0; 
     display: flex; /* Para alinear horizontalmente */
     flex: 1;
     justify-content: space-around;
@@ -111,7 +112,7 @@ body {
 a.logo {
     flex: 0 1 auto; /* Permite que el logo tenga un ancho variable */
     text-align: center; /* Alinea el logo al centro */
-    padding: 0px; /* Añade algo de padding para alineación */
+    padding: 0px; /* Sin padding */
 }
 
 .logo img {
@@ -153,7 +154,8 @@ a.logo {
     }
     label {
         display: block;
-        margin: 20px 0 5px;
+        margin-bottom: 5px;
+        margin-top: 20px;
         color: var(--color-red);
         font-weight: bold;
     }
@@ -163,15 +165,14 @@ a.logo {
         margin-bottom: 16px;
         border: none;
         border-bottom: 1px solid black;
-        background-color: var(--color-claro);
     }
     .detalles {
         width: 100%;
         padding: 12px;
-        margin: 20px 0 16px;
+        margin-bottom: 16px;
+        margin-top: 20px;
         border: none;
         border-bottom: 1px solid black;
-        background-color: var(--color-claro);
     }
     input[type="submit"] {
         background-color: var(--color-red);
@@ -180,17 +181,21 @@ a.logo {
     }
     input[type="submit"]:hover {
         background-color: var(--color-dark-green);
-    }    
+    }
+    
     .row {
         display: flex;
         justify-content: space-between;
-    }    
+    }
+    
     .half-column {
         width: 48%; 
-    }    
+    }
+    
     .half-column:not(:first-child) {
         margin-left: 4%; 
-    }    
+    }
+    
     .button {
         display:flex;
         justify-content:center;
@@ -204,7 +209,6 @@ a.logo {
         font-weight: bold;
         border: none;
         border-radius: 10px;
-        margin-bottom: 80px;
     }  
 }
 
@@ -219,18 +223,24 @@ footer {
     margin-left: 50px;
 }
 .footer-right img {
-    width: 350px;
-    margin-right: 75px;
+    width: 175px; /* Tamaño de las imágenes */
 }
+
 .footer-center {
-    display: flex;
-    justify-content: space-between;
+    flex: 2; /* Doble espacio para el centro */
+    display: flex; /* Permite alineación interna */
+    justify-content: space-around; /* Espacia los elementos internos */
+    
+    padding: 80px 0 80px 0;
 }
+
 .footer-text-left,
 .footer-text-right {
-    flex-basis: 50%;
-    margin: 80px;
+    padding: 10px; /* Espaciado interno */
+    display: flex;
+    flex-direction: column;
 }
+
 .footer-text-left a,
 .footer-text-right a {    
     display: block;
@@ -239,6 +249,15 @@ footer {
     font-weight: bold;
     font-size: 25px;
     color: var(--color-dark-green);
+}
+.footer-text-left p,
+.footer-text-right p {
+    text-decoration: none; /* Sin subrayado */
+    margin: 5px 0; /* Espacio entre enlaces */
+    font-weight: 300; 
+    font-size: 18px; /* Tamaño del texto */
+    color: var(--color-dark-green); /* Color del texto */
+    font-family:"Frank Ruhl Libre", serif
 }
 
 .footer-text-left a:hover,
@@ -258,16 +277,32 @@ footer {
     transition: width 0.5s; 
 }
 
-.footer-text-left p,
-.footer-text-right p {
-    margin: 5px 0;
-    color: var(--color-dark-green);
-    font-weight: bold;
-    font-size: 25px;
-}
-.footer-right {
+/* Estilos para la sección Alojamientos */
+.alojamientos{
     display: flex;
-    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: var(--color-dark-green);
+}
+
+/* Personalización de la barra de desplazamiento para navegadores basados en WebKit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-dark-green); /* Color del thumb (parte desplazable) */
+    border-radius: 10px; /* Bordes redondeados para un aspecto suave */
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-claro); /* Color del track (parte de fondo) */
+}
+
+/* Personalización para Firefox */
+* {
+    scrollbar-width: thin; /* Ancho fino para la barra de desplazamiento */
+    scrollbar-color: #736C4D #F2EDE4; /* Color del thumb y del track */
 }
 
 

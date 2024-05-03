@@ -8,7 +8,7 @@ body {
     font-family: "Cormorant Garamond", serif;
     font-weight: 300;
     font-style: normal;
-    background-color: var(--color-text); /* Usa la variable para el color de fondo */
+    background-color: var(--color-bg); /* Usa la variable para el color de fondo */
     margin: 0px
 }
 
@@ -25,7 +25,7 @@ body {
     margin-right: 50px;
     gap: 5px;
     margin-bottom: -50px;
-    color: var(--color-bg);
+    color: var(--color-text);
 }
 .section-name h3,i{
     font-family:'Courier New', Courier, monospace;
@@ -38,7 +38,7 @@ body {
 }
 
 .title {
-    color: var(--color-bg); /* Color del texto */
+    color: var(--color-text); /* Color del texto */
     font-size: 3.5em;
     letter-spacing: -3px;
     margin: 0px 50px 0px 50px;
@@ -63,7 +63,7 @@ body {
 
 .line-decorative {
     height: 1px; /* Grosor de la línea */
-    background-color: var(--color-bg); /* Color de fondo */
+    background-color: var(--color-text); /* Color de fondo */
     width: 150px; /* Longitud de la línea decorativa */
     border-radius: 5px; /* Borde redondeado */
     margin-right: 10px; /* Espacio entre la línea y el texto */
@@ -74,7 +74,7 @@ body {
 .section1{
     display:flex;
     justify-content: flex-end;
-    color: var(--color-bg);
+    color: var(--color-text);
     margin: 0px 50px 0px 50px;
 }
 
@@ -93,7 +93,7 @@ body {
 .section2 {
     display: flex; /* Usa flexbox para alinear columnas */
     gap: 20px; /* Espacio entre columnas */
-    color: var(--color-bg);
+    color: var(--color-text);
     margin: 0px 50px 0px 50px;
 }
 
@@ -102,9 +102,10 @@ body {
 }
 
 .section2 .about-img1 {
-    width: 85%; /* Imagen ocupa todo el ancho */
-    height: 50%; /* Imagen ocupa toda la altura */
+    width: 85%; 
+    height: 50%; 
     object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
+    border: 3px solid var(--color-text);
 }
 
 .section2 .column-der {
@@ -114,8 +115,8 @@ body {
 }
 
 .section2 .text-container {
-    flex: 1; /* El texto ocupa la parte superior */
-    display: flex; /* Permite alinear el texto */
+    flex: 1; 
+    display: flex; 
     justify-content: center; /* Centra el texto horizontalmente */
     align-items: center; /* Centra el texto verticalmente */
 }
@@ -126,13 +127,14 @@ body {
 }
 
 .section2 .image-container {
-    flex: 1; /* La imagen ocupa la parte inferior */
+    flex: 1;
 }
 
 .section2 .about-img2 {
-    width: 100%; /* Imagen ocupa todo el ancho */
-    height: 50%; /* Imagen ocupa toda la altura */
+    width: 100%; 
+    height: 50%; 
     object-fit: cover; /* Asegura que la imagen cubra todo el espacio */
+    border: 3px solid var(--color-text);
 }
 
 /* SECCIÓN 3 */
@@ -140,7 +142,6 @@ body {
 .section3 {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-bg);
     width: 100%;
     margin-top: -100px;
     padding-top: 100px;
@@ -149,7 +150,7 @@ body {
 
 .section3 .text-container{
     padding: 0px 50px 0px 50px;
-    display: flex; /* Usa flexbox para alinear columnas */
+    display: flex; 
     justify-content: space-between;
     gap: 20px; /* Espacio entre columnas */
     align-items: flex-start;
@@ -199,7 +200,7 @@ body {
 
 .section3 .column-der {
     flex: 1; /* Ocupa la mitad derecha */
-    display: flex; /* Para dividir el espacio en el interior */
+    display: flex; 
     flex-direction: column; /* Alinea los elementos verticalmente */
     align-items: flex-end;
     justify-content: space-between;
@@ -210,12 +211,14 @@ body {
     width: 100%;
     height: 95vh;
     object-fit: cover;
+    border: 3px solid var(--color-text);
 }
 
 .section3 .about-img4{
     width: 100%;
     height: 120%;
     object-fit: cover;
+    border: 3px solid var(--color-text);
 }
 
 .section3 .column-der .text-container{
@@ -234,5 +237,3 @@ body {
     width: 50%;
     
 }
-
-
