@@ -22,10 +22,6 @@ app.get('/contact', (req, res) => {
   res.sendFile(join(__dirname, 'src/public/contact.html'));
 });
 
-app.get('/edit', (req,res) => {
-  res.sendFile(join(__dirname,'src/public/edit.html'));
-});
-
 app.use(express.static(join(__dirname, 'src/public')));
 
 // Manejo de errores
