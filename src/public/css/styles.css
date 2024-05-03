@@ -1,8 +1,8 @@
 :root {
-    --color-claro: #F2EDE4; 
+    --color-claro: #f2ede4; 
     --color-light-green: #daeccdaa;
-    --color-green: #ACBF8F;   
-    --color-dark-green: #736C4D;
+    --color-green: #abbe8e;   
+    --color-dark-green: #736c4d;
     --color-red:#954926;
 }
 
@@ -12,37 +12,7 @@ body {
     font-style: normal;
     margin: 0;
     padding: 0;
-}
-
-/* Estilos para el Header */
-.header {
-    header {
-        background-color: #333; 
-        color: #fff; 
-        text-align: center;
-    }
-    img {
-        width: 100%;
-    }
-    nav {
-        display: flex;
-        justify-content: space-around;
-        background-color: #f2ede4;
-    }
-    nav a {
-        text-decoration: none; 
-        padding: 0 15px;     
-        color: var(--color-dark-green);
-        font-weight: bold;
-        padding-top: 30px;
-    }
-    nav a:hover {
-        color: var(--color-red);
-    }
-    nav .logo {
-        max-width: 120px;
-        padding-top: 0;
-    }
+    background-color: var(--color-claro);
 }
 
 
@@ -70,9 +40,9 @@ body {
 .banner .banner-img {
     width: 100%; /* Imagen que ocupa todo el ancho */
     max-height: 1920px; /* Limita la altura de la imagen */
-    object-fit:cover; /* Asegura que la imagen cubra todo el espacio */
-    border-bottom-left-radius: 40%; /* Radio para la esquina inferior izquierda */
-    border-bottom-right-radius: 40%; /* Radio para la esquina inferior derecha */
+    object-fit:cover; 
+    border-bottom-left-radius: 40%; 
+    border-bottom-right-radius: 40%;
     height: 100vh; /* Hace que el banner ocupe toda la altura del viewport */
 }
 
@@ -110,7 +80,7 @@ body {
 .navbar ul {
     list-style: none; /* Quita los puntos de la lista */
     margin: 0; /* Sin margen */
-    padding: 0; /* Sin padding */
+    padding: 30px 0 30px 0; 
     display: flex; /* Para alinear horizontalmente */
     flex: 1;
     justify-content: space-around;
@@ -142,148 +112,71 @@ body {
 a.logo {
     flex: 0 1 auto; /* Permite que el logo tenga un ancho variable */
     text-align: center; /* Alinea el logo al centro */
-    padding: 0px; /* Añade algo de padding para alineación */
+    padding: 0px; /* Sin padding */
 }
 
 .logo img {
     height: 70px; /* Tamaño del logo */
 }
 
-/* Estilos para la página de Contacto */
-.contact {
-    background-color: var(--color-claro);
-    .banner .banner-pic {
-        width: 100%;
-    }
-    .container {
-        max-width: 60%;
-        margin: 0 auto;
-        padding: 20px;
-    }
-    .container .encabezado {
-        text-align: center;
-    }
-    .container p {
-        margin: 0 0 20px 0;
-        font-weight:bold;
-    }
-    h1, h2 {
-        text-align: center;
-        margin: 20px 0 10px 0;
-        color: var(--color-red);
-    }
-    h3 {
-        margin: 50px 0 6px 0;
-        color: var(--color-red);
-    }
-    .apartado {
-        margin: 40px 0 40px 0;
-    }
-    form {
-        margin-top: 40px;
-    }
-    label {
-        display: block;
-        margin-bottom: 5px;
-        margin-top: 20px;
-        color: var(--color-red);
-        font-weight: bold;
-    }
-    input, select {
-        width: 100%;
-        padding: 12px;
-        margin-bottom: 16px;
-        border: none;
-        border-bottom: 1px solid black;
-    }
-    .detalles {
-        width: 100%;
-        padding: 12px;
-        margin-bottom: 16px;
-        margin-top: 20px;
-        border: none;
-        border-bottom: 1px solid black;
-    }
-    input[type="submit"] {
-        background-color: var(--color-red);
-        color: #f2ede4;
-        cursor: pointer;
-    }
-    input[type="submit"]:hover {
-        background-color: var(--color-dark-green);
-    }
-    
-    .row {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .half-column {
-        width: 48%; 
-    }
-    
-    .half-column:not(:first-child) {
-        margin-left: 4%; 
-    }
-    
-    .button {
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        margin-top: 76px;
-    }
-    .button input {
-        width: 14%; 
-        height: 50px;
-        text-align: center;
-        font-weight: bold;
-        border: none;
-        border-radius: 10px;
-    }  
+
+/* Estilos para el Footer */
+footer {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(242, 237, 228, 1) 0%,  /* Empieza transparente y en 0% del degradado */
+        
+        rgba(115, 108, 77, 0.4) 100% /* Termina en opacidad baja al 100% */
+    );
+    display: flex; /* Para alinear elementos */
+    justify-content: space-between; /* Espaciar elementos en el footer */
+    align-items: center; /* Alineación vertical */
+    width: 100%; /* Ancho completo del footer */
 }
 
-footer {
-    background-color: var(--color-light-green);
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
+.footer-left,
+.footer-right {
+    flex: 1; /* Ocupa igual espacio */
+    text-align: center; /* Centrar contenido */
+    
 }
-.footer-left img {
-    width: 330px;   
-    margin-left: 50px;
-}
+
+.footer-left img,
 .footer-right img {
-    width: 350px;
-    margin-right: 75px;
+    width: 175px; /* Tamaño de las imágenes */
 }
+
 .footer-center {
-    display: flex;
-    justify-content: space-between;
+    flex: 2; /* Doble espacio para el centro */
+    display: flex; /* Permite alineación interna */
+    justify-content: space-around; /* Espacia los elementos internos */
+    
+    padding: 80px 0 80px 0;
 }
+
 .footer-text-left,
 .footer-text-right {
-    flex-basis: 50%;
-    margin: 80px;
+    padding: 10px; /* Espaciado interno */
+    display: flex;
+    flex-direction: column;
 }
+
 .footer-text-left a,
-.footer-text-right a {    
-    display: block;
-    text-decoration: none; 
-    margin: 5px 0;
-    font-weight: bold;
-    font-size: 25px;
-    color: var(--color-dark-green);
-}
+.footer-text-right a,
 .footer-text-left p,
 .footer-text-right p {
-    margin: 5px 0;
-    color: var(--color-dark-green);
-    font-weight: bold;
-    font-size: 25px;
+    text-decoration: none; /* Sin subrayado */
+    margin: 5px 0; /* Espacio entre enlaces */
+    font-weight: 300; 
+    font-size: 18px; /* Tamaño del texto */
+    color: var(--color-dark-green); /* Color del texto */
+    font-family:"Frank Ruhl Libre", serif
 }
-.footer-right {
+
+/* Estilos para la sección Alojamientos */
+.alojamientos{
     display: flex;
-    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    color: var(--color-dark-green);
 }
-
-
