@@ -1,0 +1,97 @@
+/* Estilos para la página de Contacto */
+.contact {
+    background-color: var(--color-claro);
+    .banner .banner-pic {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        object-position:bottom;
+    }
+    .container {
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    .container .encabezado {
+        text-align: center;
+    }
+    .container p {
+        margin: 0 0 20px 0;
+        font-size: 15px;
+    }
+    h1, h2 {
+        text-align: center;
+        margin: 20px 0 10px 0;
+        color: var(--color-red);
+        font-size: 30px;
+    }
+    h3 {
+        margin: 50px 0 6px 0;
+        color: var(--color-red);
+    }
+    .apartado {
+        margin: 40px 0 40px 0;
+    }
+    form {
+        margin-top: 40px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        margin-top: 20px;
+        color: var(--color-red);
+        font-weight: bold;
+    }
+    input, select {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 16px;
+        border: none;
+        border-bottom: 1px solid var(--color-red);
+        border-radius: 10px;
+    }
+    .detalles {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 16px;
+        margin-top: 20px;
+        border: none;
+        border-bottom: 1px solid var(--color-red);
+    }
+    input[type="submit"] {
+        background-color: var(--color-red);
+        color: #f2ede4;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: var(--color-dark-green);
+    }
+    
+    .row {
+        display: flex;
+        justify-content: space-between;
+        gap:20px;
+    }
+    
+    .half-column {
+        width: 48%; 
+    }
+    
+    .half-column:not(:first-child) {
+        margin-left: 4%; 
+    }
+    
+    .button {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        margin-top: 76px;
+    }
+    .button input {
+        width: 80px; 
+        height: 40px;
+        text-align: center;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+    }  
+}

@@ -1,0 +1,182 @@
+:root {
+    --color-claro: #f2ede4; 
+    --color-light-green: #daeccdaa;
+    --color-green: #abbe8e;   
+    --color-dark-green: #736c4d;
+    --color-red:#954926;
+}
+
+body {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-claro);
+}
+
+
+/* Estilos para el Banner */
+.banner {
+    position: relative; /* Permite que el título se superponga */
+    background-color: var(--color-claro); /* Usa la variable para el color de fondo */
+}
+
+.banner .container-banner {
+    position: relative; /* Necesario para que el título se posicione correctamente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner .title {
+    position: absolute; /* Permite que el título se superponga al banner */
+    top: 50%; /* Coloca el título en el centro vertical del banner */
+    transform: translateY(-55%); /* Ajusta la posición para centrarlo exactamente */
+    width: 100%;
+    z-index: 10; /* Para asegurar que esté al frente */
+}
+
+.banner .banner-img {
+    width: 100%; /* Imagen que ocupa todo el ancho */
+    max-height: 1920px; /* Limita la altura de la imagen */
+    object-fit:cover; 
+    border-bottom-left-radius: 40%; 
+    border-bottom-right-radius: 40%;
+    height: 100vh; /* Hace que el banner ocupe toda la altura del viewport */
+}
+
+/* Botón Flotante con animación de rotación */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg); /* Comienza sin rotación */
+    }
+    to {
+        transform: rotate(360deg); /* Gira 360 grados */
+    }
+}
+
+.floating-button {
+    position: fixed; /* Hace que el botón sea flotante */
+    z-index: 99;
+    bottom: 0px; /* Posiciona el botón a 0px del borde inferior */
+    right: 0px; /* Posiciona el botón a 0px del borde derecho */
+    cursor: pointer;
+    animation: rotate 10s linear infinite; /* Aplica la animación de rotación */
+}
+
+.floating-button img {
+    width: 115px; /* Tamaño de la imagen del botón */
+}
+
+/* Barra de navegación */
+
+.navbar {
+    background-color: var(--color-claro); /* Usa la variable para el color de fondo */ 
+    display: flex; /* Para alinear los elementos */
+    align-items: center; /* Alineación vertical */
+}
+
+.navbar ul {
+    list-style: none; /* Quita los puntos de la lista */
+    margin: 0; /* Sin margen */
+    padding: 30px 0 30px 0; 
+    display: flex; /* Para alinear horizontalmente */
+    flex: 1;
+    justify-content: space-around;
+}
+
+.navbar a {
+    font-family: 'Roboto', sans-serif; /* Fuente para los enlaces del navbar */
+    text-decoration: none; /* Sin subrayado */
+    color: var(--color-dark-green); /* Usa la variable para el color del texto */
+    font-weight:lighter;
+    font-size:0.8em; /* Tamaño del texto */
+    padding: 10px 50px; /* Espaciado interno */
+    position: relative; /* Para el uso de pseudo-elementos */
+    transition: all 0.3s; /* Animación suave */
+    display: block;
+}
+
+.navbar ul a:hover:after {
+    content: ''; /* Pseudo-elemento vacío para crear la línea de subrayado */
+    position: absolute; /* Posición absoluta para el subrayado */
+    bottom: 0; /* Alinea el subrayado con la parte inferior del elemento 'a' */
+    left: 0; /* Comienza desde la izquierda */
+    width: 100%; /* El subrayado cubre todo el ancho del elemento 'a' */
+    height: 2px; /* Altura del subrayado */
+    background-color: var(--color-dark-green); /* Color del subrayado */
+    transition: width 0.5s; /* Animación para el efecto de subrayado */
+}
+
+a.logo {
+    flex: 0 1 auto; /* Permite que el logo tenga un ancho variable */
+    text-align: center; /* Alinea el logo al centro */
+    padding: 0px; /* Sin padding */
+}
+
+.logo img {
+    height: 70px; /* Tamaño del logo */
+}
+
+
+/* Estilos para el Footer */
+footer {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(242, 237, 228, 1) 0%,  /* Empieza transparente y en 0% del degradado */
+        
+        rgba(115, 108, 77, 0.4) 100% /* Termina en opacidad baja al 100% */
+    );
+    display: flex; /* Para alinear elementos */
+    justify-content: space-between; /* Espaciar elementos en el footer */
+    align-items: center; /* Alineación vertical */
+    width: 100%; /* Ancho completo del footer */
+}
+
+.footer-left,
+.footer-right {
+    flex: 1; /* Ocupa igual espacio */
+    text-align: center; /* Centrar contenido */
+    
+}
+
+.footer-left img,
+.footer-right img {
+    width: 175px; /* Tamaño de las imágenes */
+}
+
+.footer-center {
+    flex: 2; /* Doble espacio para el centro */
+    display: flex; /* Permite alineación interna */
+    justify-content: space-around; /* Espacia los elementos internos */
+    
+    padding: 80px 0 80px 0;
+}
+
+.footer-text-left,
+.footer-text-right {
+    padding: 10px; /* Espaciado interno */
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-text-left a,
+.footer-text-right a,
+.footer-text-left p,
+.footer-text-right p {
+    text-decoration: none; /* Sin subrayado */
+    margin: 5px 0; /* Espacio entre enlaces */
+    font-weight: 300; 
+    font-size: 18px; /* Tamaño del texto */
+    color: var(--color-dark-green); /* Color del texto */
+    font-family:"Frank Ruhl Libre", serif
+}
+
+/* Estilos para la sección Alojamientos */
+.alojamientos{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: var(--color-dark-green);
+}
